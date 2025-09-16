@@ -1,0 +1,186 @@
+#div_menu{
+    background-color:chartreuse;
+    position: sticky;
+    top:0%;
+    margin-top: 0px;
+    height: 80px;
+    z-index: 2;
+}
+#div_menu ul{
+    display: flex;
+    list-style: none;
+    margin-left: 920px;
+
+}
+
+#div_menu li{
+    padding: 20px;
+    padding-top: 30px;
+}
+
+#div_menu button{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+#div_menu button:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+a{
+    text-align: right;
+    font-size:14px;
+    font-family:'Arial';
+}
+
+/*NEED TO UNDERSTANT*/
+#div_menu ul li:first-child {
+    position: absolute;
+    left: 10px;     
+    top: 0px;    
+}
+
+.img_container{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.img_container img{
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.img_container p{
+    position: absolute;
+    top:25%;
+    left:10%;
+    color: white;
+    font-size: large;
+    font-family:Arial;
+}
+
+.img_container .btn{
+    position: absolute;
+    top:60%;
+    left:10%;
+    height: 70px;
+    width: 280px;
+    color:black;
+    background-color: chartreuse;
+    font-size:25px;
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.img_container .btn:hover{
+    background-color:rgb(255, 255, 255);
+}
+
+#footer_div{
+    background-color:darkslategrey;
+    height: 300px;
+}
+#footer_div p{
+    color:white;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+#footer_div ul{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding-left: 70px;
+    list-style: none;
+}
+
+/*-------------------------Registration page-------------------*/
+
+#registration_div{
+    position: relative;
+}
+#login_div{
+    background-color:chartreuse;
+    position: absolute;
+    top:10%;
+    left:12%;
+    width: 30%;
+    height: 70%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#login_div p{
+    text-align: center;
+    font-family: Arial;
+}
+#login_div img{
+    display: block;
+    margin-left: 130px;
+    margin-right: auto;
+    padding: 0%;
+}
+#login_div button{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;      /* makes margin:auto work */
+    width: 280px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Arial;
+    font-size: 18px;
+}
+#login_div button:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+#regi_div{
+    position: absolute;
+    background-color: rgb(39, 38, 38);
+    top:10%;
+    left:42%;
+    width: 46%;
+    height: 70%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#regi_div p{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+#regi_div button{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;      /* makes margin:auto work */
+    width: 280px;
+    height: 40px;
+    background-color:chartreuse;
+    color:black;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#regi_div button:hover{
+    background-color: white;
+}
