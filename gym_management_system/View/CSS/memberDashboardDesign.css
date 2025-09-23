@@ -47,47 +47,69 @@ a{
     top: 0px;    
 }
 
-.img_container{
+
+/*-------------------------------------*/
+.image-wrapper {
     position: relative;
     width: 100%;
-    z-index: 1;
+    height: 100vh; /* full screen height */
 }
 
-.img_container img{
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-}
-
-.img_container p{
+.cards-wrapper {
     position: absolute;
-    top:25%;
-    left:10%;
-    color: white;
-    font-size: large;
-    font-family:Arial;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 30px;
 }
 
-.img_container .btn{
-    position: absolute;
-    top:60%;
-    left:10%;
-    height: 70px;
+.package-card {
     width: 280px;
-    color:black;
-    background-color: chartreuse;
-    font-size:25px;
-    font-family: Arial;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    background: #d7ffd4;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    z-index:2;
+}
+
+.package-card h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.package-card p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.package-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2b2c2d;
+    color: white;
     cursor: pointer;
-    border-radius: 10px;
 }
-.img_container .btn:hover{
-    background-color:rgb(255, 255, 255);
+
+.package-card button:hover {
+    background: #5b5b5a;
 }
+
+
+/*--------------------*/
 
 #footer_div{
     background-color:darkslategrey;
     height: 300px;
+    margin-top: 6%;
 }
 #footer_div p{
     color:white;
@@ -103,5 +125,3 @@ a{
     padding-left: 70px;
     list-style: none;
 }
-
-/*-------------------------Registration page-------------------*/

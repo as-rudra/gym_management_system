@@ -1,0 +1,71 @@
+/* Parent container */
+#registration_div {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height */
+    overflow: hidden;
+}
+
+/* Background image */
+#registration_div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps aspect ratio */
+    z-index: -1; /* send background behind */
+}
+
+/* Login box */
+#login_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9); /* white with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    border-color: #333;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Heading text */
+#login_div p {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Inputs */
+#username,
+#password {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/* Submit button */
+#submit {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}

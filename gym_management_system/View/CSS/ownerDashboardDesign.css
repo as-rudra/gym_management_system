@@ -1,0 +1,130 @@
+#div_menu{
+    background-color:chartreuse;
+    position: sticky;
+    top:0%;
+    margin-top: 0px;
+    height: 80px;
+    z-index: 2;
+}
+#div_menu ul{
+    display: flex;
+    list-style: none;
+    margin-left: 920px;
+
+}
+
+#div_menu li{
+    padding: 20px;
+    padding-top: 30px;
+}
+
+#div_menu button{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: Arial;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+#div_menu button:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+a{
+    text-align: right;
+    font-size:14px;
+    font-family:'Arial';
+}
+
+/*NEED TO UNDERSTANT*/
+#div_menu ul li:first-child {
+    position: absolute;
+    left: 10px;     
+    top: 0px;    
+}
+
+
+/*-------------------------------------*/
+
+select[name="mngUser"] {
+    padding: 40px 60px;
+    font-size: 26px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2%;
+    margin-left:12%;
+    margin-right: 4%;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    cursor: pointer;
+    outline: none;
+    min-width: 220px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+select[name="mngPackage"] {
+    padding: 40px 60px;
+    font-size: 26px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 4%;
+    background-color: #5c2821; /* Blue */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    min-width: 220px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+select[name="vreport"] {
+    padding: 40px 60px;
+    font-size: 26px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 4%;
+    background-color: #672c92; /* Blue */
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    min-width: 220px; 
+    text-align: center;
+    font-weight: bold;
+}
+/* Hover effect */
+select[name="mngUser"]:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+select[name="mngPackage"]:hover {
+    background-color: #793030; /* Darker blue */
+}
+select[name="vreport"]:hover {
+    background-color: #6912b4; /* Darker blue */
+}
+
+/*--------------------*/
+
+#footer_div{
+    background-color:darkslategrey;
+    height: 300px;
+    margin-top: 6%;
+}
+#footer_div p{
+    color:white;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+#footer_div ul{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding-left: 70px;
+    list-style: none;
+}

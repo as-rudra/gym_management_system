@@ -66,7 +66,7 @@
     display: block;      /* makes margin:auto work */
     width: 280px;
     height: 40px;
-    background-color:chartreuse;
+    background-color:#7fff00;
     color:black;
     border: none;
     cursor: pointer;
@@ -77,4 +77,72 @@
 
 #regi_div button:hover{
     background-color: white;
+}
+
+
+/*-------------------------------*/
+/* Parent container */
+#regi_div {
+    background-color:rgb(43, 43, 43);
+    position: absolute;
+    top:10%;
+    left:40%;
+    width: 50%;
+    height: 70%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+/* Title paragraph */
+#regi_div p {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #ffffff;
+    margin-top:5%;
+}
+
+/* Form */
+#regi_div form {
+    margin-top:6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;  /* spacing between inputs */
+    width: 100%;
+    max-width: 400px; /* keeps it from getting too wide */
+}
+
+/* Input fields */
+#username,
+#email,
+#setPassword,
+#confirmPassword,
+#usertype {
+    width: 100%;
+    margin-left: 85%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    align-items: center;
+}
+
+
+
+/* Submit button */
+#submit {
+    background-color: #7fff00;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 105%;
+    margin-left: 85%;
+}
+
+#submit:hover {
+    background-color: #5cf564;
 }

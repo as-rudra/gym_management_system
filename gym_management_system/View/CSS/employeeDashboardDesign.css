@@ -46,48 +46,14 @@ a{
     left: 10px;     
     top: 0px;    
 }
+/*----------------------------------------------------*/
 
-.img_container{
-    position: relative;
-    width: 100%;
-    z-index: 1;
-}
 
-.img_container img{
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-}
-
-.img_container p{
-    position: absolute;
-    top:25%;
-    left:10%;
-    color: white;
-    font-size: large;
-    font-family:Arial;
-}
-
-.img_container .btn{
-    position: absolute;
-    top:60%;
-    left:10%;
-    height: 70px;
-    width: 280px;
-    color:black;
-    background-color: chartreuse;
-    font-size:25px;
-    font-family: Arial;
-    cursor: pointer;
-    border-radius: 10px;
-}
-.img_container .btn:hover{
-    background-color:rgb(255, 255, 255);
-}
-
+/*-----------------------------------------------------*/
 #footer_div{
     background-color:darkslategrey;
     height: 300px;
+    margin-top: 6%;
 }
 #footer_div p{
     color:white;
@@ -103,5 +69,3 @@ a{
     padding-left: 70px;
     list-style: none;
 }
-
-/*-------------------------Registration page-------------------*/
