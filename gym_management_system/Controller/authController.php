@@ -61,4 +61,32 @@
     }
 
 
+    if (isset($_POST['loginSubmit'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $user = checkLogin($username, $password);
+
+        if ($user) {
+            // login success, set session
+            $_SESSION['user_id'] = $user['user_id'];
+            $_SESSION['user_name'] = $user['user_name'];
+            $_SESSION['user_type'] = $user['user_type'];
+
+            // redirect based on role
+            if ($user['user_type'] == "owner") {
+                header("Location: ../View/Owner/ownerDashboard.php");
+            } elseif ($user['user_type'] == "member") {
+                header("Location: ../View/Member/memberDashboard.php");
+            } elseif ($user['user_type'] == "employee") {
+                header("Location: ../View/Employee/employeeDashboard.php");
+            } else {
+                echo "Invalid role!";
+            }
+            exit();
+        } else {
+            header("Location: ../View/login.php?Err=Incorrect username or password!");
+        }
+    }
+
 ?>

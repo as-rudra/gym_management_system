@@ -48,63 +48,47 @@ a{
 }
 
 
-/*-------------------------------------*/
-/* Container for all packages */
-.package-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+/*---------------------------------------------------------------------*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
 }
 
-/* Individual package card */
-.package-card {
-    background: #fff;
+table th, table td {
     border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
 }
 
-.package-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Card content */
-.package-card h2 {
-    margin-bottom: 10px;
-    color: #4CAF50;
-}
-
-.package-card p {
-    margin: 8px 0;
-    font-size: 16px;
-    color: #333;
-}
-
-/* Button */
-.package-card button {
-    margin-top: 10px;
-    padding: 10px 20px;
+table th {
     background-color: #4CAF50;
     color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    padding: 5px 12px;
+    background-color: #f44336;
+    color: white;
     border: none;
-    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.2s;
+    border-radius: 4px;
 }
 
-.package-card button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #d32f2f;
 }
 
 
-/*--------------------*/
+/*---------------------------------------------------------------------*/
 
 #footer_div{
     background-color:darkslategrey;

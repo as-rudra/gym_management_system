@@ -53,7 +53,7 @@
 
 
 /* Submit button */
-#submit {
+#loginSubmit {
     width: 95%;
     padding: 12px;
     margin-top: 15px;
@@ -66,6 +66,6 @@
     cursor: pointer;
 }
 
-#submit:hover {
+#loginSubmit:hover {
     background-color: #45a049;
 }

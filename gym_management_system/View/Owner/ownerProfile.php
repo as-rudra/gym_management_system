@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Body Trend</title>
-        <link rel="stylesheet" href="../CSS/ownerDashboardDesign.css"> 
+        <link rel="stylesheet" href="../CSS/ownerProfileDesign.css"> 
     </head>
     <body>
         <header>
@@ -13,30 +13,45 @@
                     <li><a>ABOUT</a></li>
                     <li><a>GALLERY</a></li>
                     <li><a>CONTACT US</a></li>
-                    <li style="padding-top: 20px"><a href="ownerProfile.php"><button>Profile</button></a></li> 
+                    <li style="padding-top: 20px"><a><button>Profile</button></a></li> 
                 </ul>   
             </div>
             
         </header>
-        <h1 style="text-align: center;">Hello Owner, Welcome!</h1> 
+        <h1 style="text-align: center;">Your Profile Info[OWNER]</h1> 
         <hr>
-            <select name="mngUser" onchange="location = this.value;">
-                <option value="" disabled selected hidden>Manage Users</option>
-                <option value="ownerViewEmployee.php">Employee list</option>
-                <option value="ownerViewUser.php">Member list</option>
-            </select>
+        <!-- Profile Info Table -->
+    <div style="width: 60%; margin: 20px auto;">
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: left; border-collapse: collapse;">
+            <tr>
+                <th>Field</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>JohnDoe</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>johndoe@email.com</td>
+            </tr>
+            <tr>
+                <td>Role</td>
+                <td>Owner</td>
+            </tr>
+            <tr>
+                <td>Join Date</td>
+                <td>2025-09-23</td>
+            </tr>
+        </table>
 
-            <select name="mngPackage" onchange="location=this.value;">
-                <option value="" disabled selected hidden>Manage Packages</option>
-                <option value="ownerViewPackage.php">View packages</option>
-                <option value="ownerAddPackage.php">Add new package</option>
-            </select>
-
-            <select name="vreport">
-                <option value="" disabled selected hidden>View Report</option>
-                <option value="viewpackages">Earning details</option>    
-            </select>
-            <br><br><br><br>
+        <!-- Logout Button -->
+        <div class="logout-container">
+            <a href="../logout.php"><button>Logout</button></a>
+        </div>
+    </div>
+   
+        
         <footer>
             <div id="footer_div">
                 <p>

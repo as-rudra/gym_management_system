@@ -48,63 +48,33 @@ a{
 }
 
 
-/*-------------------------------------*/
-/* Container for all packages */
-.package-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
+/*--------------------------------------------------------*/
 
-/* Individual package card */
-.package-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
+/* Center container */
+.logout-container {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
+    margin-top: 20px;
 }
 
-.package-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Card content */
-.package-card h2 {
-    margin-bottom: 10px;
-    color: #4CAF50;
-}
-
-.package-card p {
-    margin: 8px 0;
-    font-size: 16px;
-    color: #333;
-}
-
-/* Button */
-.package-card button {
-    margin-top: 10px;
+/* Logout button design */
+.logout-container button {
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
     font-size: 16px;
-    transition: background 0.2s;
+    font-weight: bold;
+    background-color: #e74c3c;   /* Red shade */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.package-card button:hover {
-    background-color: #45a049;
+/* Hover effect */
+.logout-container button:hover {
+    background-color: #c0392b;  /* Darker red */
 }
 
 
-/*--------------------*/
+
+/*----------------------------------------------------------*/
 
 #footer_div{
     background-color:darkslategrey;

@@ -1,3 +1,9 @@
+<?php
+require_once("../../Model/packageModel.php"); // connect to DB
+$plans = getAllPackages();
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,28 +26,26 @@
         </header>
         <h1 style="text-align: center;">Hello Member, Welcome!</h1> 
         <hr>
-        <h2 style="text-align: center;">Our Packages</h2>
-        <div class="image-wrapper">
-            <img src="../../Asset/regiBackground.png" style="width: 100%; height: 100%;">
-            
-            <div class="cards-wrapper">
-                <div class="package-card">
-                    <h2>Premium Package</h2>
-                    <p><strong>Price:</strong> $50</p>
-                    <p><strong>Duration:</strong> 3 Months</p>
-                    <button>Book Now</button>
-                </div>
-            
+        <!---------------------------------------------------------------------------->
+        
+        <h1 style="text-align: center; margin-top: 20px;">Our Membership Plans</h1>
 
+        <div class="package-container">
+            <?php foreach($plans as $plan) { ?>
                 <div class="package-card">
-                    <h2>Basic Package</h2>
-                    <p><strong>Price:</strong> $20</p>
-                    <p><strong>Duration:</strong> 1 Month</p>
-                    <button>Book Now</button>
+                    <h2><?php echo $plan['plan_name']; ?></h2>
+                    <p><strong>Price:</strong> <?php echo $plan['price']; ?> BDT</p>
+                    <p><strong>Duration:</strong> <?php echo $plan['duration']; ?> months</p>
+                    <form method="post" action="../../Controller/packageController.php">
+                        <input type="hidden" name="plan_id" value="<?php echo $plan['plan_id']; ?>">
+                        <button type="submit" name="book_now">Book Now</button>
+                    </form>
                 </div>
-
-            </div>
+            <?php } ?>
         </div>
+
+
+        <!---------------------------------------------------------------------------->
 
         <footer>
             <div id="footer_div">

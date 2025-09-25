@@ -48,64 +48,57 @@ a{
 }
 
 
-/*-------------------------------------*/
-/* Container for all packages */
+
+/*--------------------------------------------------------*/
+
 .package-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    width: 60%;
+    margin: 30px auto;
     padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Individual package card */
-.package-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
+.package-container h2 {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
-}
-
-.package-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Card content */
-.package-card h2 {
-    margin-bottom: 10px;
-    color: #4CAF50;
-}
-
-.package-card p {
-    margin: 8px 0;
-    font-size: 16px;
+    margin-bottom: 20px;
     color: #333;
 }
 
-/* Button */
-.package-card button {
-    margin-top: 10px;
-    padding: 10px 20px;
+.package-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.package-table td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.package-table input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.package-table button {
     background-color: #4CAF50;
     color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.2s;
 }
 
-.package-card button:hover {
+.package-table button:hover {
     background-color: #45a049;
 }
 
 
-/*--------------------*/
-
+/*----------------------------------------------------------*/
 #footer_div{
     background-color:darkslategrey;
     height: 300px;
